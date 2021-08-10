@@ -1,0 +1,28 @@
+{
+  "logo": "logo.png",
+  "version": "1.0.0",
+  "homepage": "http://oct1a.cn",
+  "author": "Oct1a",
+  "preload": "preload.js",
+  "features": [{
+    "code": "convert",
+    "explain": "图片转PDF",
+    "cmds": [{
+      "type": "files",
+      "label": "转为PDF格式",
+      "fileType": "file",
+      "match": "/.(png|jpg|gif|jpeg|webp)$/",
+      "minNum": 1
+    }]
+  }, {
+    "code": "convert_merge",
+    "explain": "多张图片合成PDF",
+    "cmds": [{
+      "type": "files",
+      "label": "多张图合成PDF",
+      "fileType": "file",
+      "match": "/.(png|jpg|gif|jpeg|webp)$/",
+      "minNum": 2
+    }]
+  }]
+}
